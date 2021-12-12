@@ -12,109 +12,107 @@
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     
-    <body>
+    <body class="contactoContainer">
     
-    <div class="container-contacto">
-    
-        <!-- Header -->
-    
-        <header>
+    <!-- HEADER -->
+
+    <header>
         
-            <div class="container-nav">
-                <img src="../img/logo.png" alt="">
-                <nav class="nav">
-                    <ul class="menu">
-                        <li>
-                            <a class="menu-items1" href="../index.html">INICIO</a>
-                        </li>
-                        <li>
-                            <a class="menu-items1" href="productos.html">PRODUCTOS</a>
-                        </li>
-                        <li>
-                            <a class="menu-items1" href="recetas.html">RECETAS</a>
-                        </li>
-                        <li>
-                            <a class="menu-items1" href="galería.html">GALERÍA</a>
-                        </li>
-                        <li>
-                            <a class="menu-items1" href="contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="container-registration">
-                    <a class="menu-items2" href="">Ingresá</a>
-                    <a class="menu-items2" href="">Registrate</a>
-                </div>
+        <div class="navContainer">
+
+            <img class="navContainer__img" src="../img/logo.png" alt="">
+            <nav class="nav">
+                <ul class="menu">
+                    <li>
+                        <a class="menu__Items" href="../index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a class="menu__Items" href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li>
+                        <a class="menu__Items" href="recetas.html">RECETAS</a>
+                    </li>
+                    <li>
+                        <a class="menu__Items" href="galería.html">GALERÍA</a>
+                    </li>
+                    <li>
+                        <a class="menu__Items" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="registration">
+                <a class="registration__Items" href="">Ingresá</a>
+                <a class="registration__Items" href="">Registrate</a>
             </div>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
     
-        </header>
+    <section class="formContainer">
+        <h3>Dejanos tus comentarios</h3>
+        <form class="formContainer__form" action="servidor.php" method="post">
     
-    
-        <!-- Fin header -->
-    
-        <div class="container-form">
-            <h3>Dejanos tus comentarios</h3>
-            <form class="form-container" action="servidor.php" method="post">
-        
-                <div class="nombre-form">
+            <div class="nombre-form">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="" placeholder="Escriba su nombre">
-                </div>
-        
-                <div class="apellido-form">
+            </div>
+    
+            <div class="apellido-form">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" id="" placeholder="Escriba su apellido">
-                </div>
-        
-                <div class="email-form">
+            </div>
+    
+            <div class="email-form">
                 <label for="mail">Email</label>
                 <input type="mail" name="mail" required id="" placeholder="Escriba su email">
-                </div>
-        
-                <div class="tipodeconsulta-form">
+            </div>
+    
+            <div class="tipodeconsulta-form">
                 <div class="tipodeconsulta">Tipo de consulta</div>
                 <select class="tipodeconsulta-opciones" name="tipodeconsulta" id="tipodeconsulta">
                     <option value="pedido">Pedido</option>
                     <option value="consulta">Consulta</option>
                 </select>
-                </div>
-        
-                <div class="comentarios-form">
+            </div>
+    
+            <div class="comentarios-form">
                 <h4>Comentarios</h4>
                 <textarea class="textarea" name="comentario" id="comentario" cols="30" rows="10" required></textarea>
-                </div>
-        
-        
-                <input class= "enviar-form" type="button" value="Enviar formulario" name="" id="">
-            </form>
-        </div>
-        
-        <div class="container-maps">
-            <h3>Locales</h3>
-            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12044.975342962072!2d-58.45110929595553!3d-34.60961256408104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1189c237db%3A0x7d00b48da5073e21!2sCid%20Campeador!5e0!3m2!1ses-419!2sar!4v1636333565820!5m2!1ses-419!2sar" width="600" height="450" style="border:2;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+            </div>
     
-        <!--Footer-->
     
-        <footer class="footer-container">
-            <img class="footer-logo" src="../img/logo.png" alt="" width="100px" height="100px">
-            <div class="footer-contacto">
-                <p class="footer-contacto-texto">Dirección: Quisque blandit sed orci vel mollis.</p>
-                <p class="footer-contacto-texto">Teléfono: 54 9 11 12345678</p>
-            </div>
-            <div class="footer-seguinos">
-                <p>Seguinos en nuestras redes</p>
-            </div>
-            <div class="footer-redes">
-                <a href="https://www.whatsapp.com/?lang=es"><img src="../img/whatsapp.png" alt="whatsapp" width="40px"></a>
-                <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="instagram" width="40px"></a>
-                <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="facebook" width="40px"></a>
-            </div>
-            <div class="footer-copyright">
-                <p>Copyright</p>
-            </div>
-        </footer>
-    </div>
+            <input class= "enviar-form" type="button" value="Enviar formulario" name="" id="">
+        </form>
+    </section>
+    
+    <section class="mapsContainer">
+        <h3>Locales</h3>
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12044.975342962072!2d-58.45110929595553!3d-34.60961256408104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1189c237db%3A0x7d00b48da5073e21!2sCid%20Campeador!5e0!3m2!1ses-419!2sar!4v1636333565820!5m2!1ses-419!2sar" width="600" height="450" style="border:2;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    
+    <!--FOOTER-->
+
+    <footer>
+        <img class="footerLogo" src="../img/logo.png" alt="" width="100px" height="100px">
+        <div class="footerContacto">
+            <p class="footerContacto__contenido">Dirección: Quisque blandit sed orci vel mollis.</p>
+            <p class="footerContacto__contenido">Teléfono: 54 9 11 12345678</p>
+        </div>
+        <div class="footerSeguinos">
+            <p>Seguinos en nuestras redes</p>
+        </div>
+        <div class="footerRedes">
+            <a href="https://www.whatsapp.com/?lang=es"><img src="../img/whatsapp.png" alt="whatsapp" width="40px"></a>
+            <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="instagram" width="40px"></a>
+            <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="facebook" width="40px"></a>
+        </div>
+        <div class="footerCopyright">
+            <p>Copyright</p>
+        </div>
+    </footer>
     
     </body>
     </html>
