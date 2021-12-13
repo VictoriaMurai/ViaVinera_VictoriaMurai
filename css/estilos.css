@@ -81,6 +81,16 @@ body{
         color: #FCFFF7;
         }
 
+    .registration__Items{
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        padding: 0.625rem;
+        text-decoration: none;
+        background-color: #7B2F3D;
+        color: #FCFFF7;
+        flex-wrap: wrap;
+    }
+
     .portada__titulo{
         align-self: flex-end;
         font-size: 1.5rem;
@@ -92,7 +102,6 @@ body{
         border-right: none;
         background-color: rgba(0, 0, 0, 0.350);
         padding: 20px;
-        width: 50%;
         height: 5rem;
     }
 
@@ -237,7 +246,7 @@ body{
 
 /*TABLET STYLES*/
 
-@media only screen and (min-width: 481px) and (max-width: 883px) {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
 
     .indexContainer{
         display: grid;
@@ -301,6 +310,16 @@ body{
         padding: 1rem;
         text-decoration: none;
         background-color: #7b2f3d9c;
+        color: #FCFFF7;
+        flex-wrap: wrap;
+    }
+
+    .registration__Items{
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        padding: 0.625rem;
+        text-decoration: none;
+        background-color: #7B2F3D;
         color: #FCFFF7;
         flex-wrap: wrap;
     }
@@ -449,7 +468,7 @@ body{
 
 /*DESKTOP STYLES*/
 
-@media only screen and (min-width: 884px) {
+@media only screen and (min-width: 992px) {
 
     .indexContainer{
         display: grid;
@@ -515,9 +534,23 @@ body{
         flex-wrap: wrap;       
     }
 
+    .registration__Items{
+        margin: 0.3125rem;
+        margin-bottom: 1.875rem;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        text-decoration: none;
+        color: #7b2f3d;
+        border-left-style: solid;
+        border-right-style: solid;
+        align-self: top;
+    }
+
     .portada__titulo{
         align-self: flex-end;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-style: italic;
         text-align: center;
         color: white;
@@ -697,20 +730,6 @@ footer{
 .registration{
     display: flex;
     padding: auto;
-}
-
-.registration__Items{
-    margin: 0.3125rem;
-    margin-bottom: 1.875rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    text-decoration: none;
-    color: #7b2f3d;
-    border-left-style: solid;
-    border-right-style: solid;
-    align-self: top;
 }
 
 .sectionElaboracion__parrafos{
@@ -937,4 +956,28 @@ h3{
     grid-area: imgGaleria8;
     align-self: stretch;
     justify-self: stretch;    
+}
+
+.sinpadding{
+    padding: 0%;
+}
+
+.navbar-toggler{
+    background-color: black;
+}
+
+.imgproductos{
+    margin: 10%;
+    padding: 2%;
+    width: 9.375rem;
+    text-align: center;
+}
+
+.divProductos{
+    text-align: center;
+}
+
+.g-custom{
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
 }

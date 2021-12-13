@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
@@ -18,71 +19,74 @@
 
     <!-- HEADER -->
 
-    <header>
-        
-        <div class="navContainer">
+<div class="container-fluid">
+<div class="row">
+    <header class="col-12 sinpadding">
+        <nav class="navbar navbar-expand-lg navContainer">
 
-            <img class="navContainer__img" src="../img/logo.png" alt="">
-            <nav class="nav">
-                <ul class="menu">
-                    <li>
-                        <a class="menu__Items" href="../index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a class="menu__Items" href="productos.html">PRODUCTOS</a>
-                    </li>
-                    <li>
-                        <a class="menu__Items" href="recetas.html">RECETAS</a>
-                    </li>
-                    <li>
-                        <a class="menu__Items" href="galería.html">GALERÍA</a>
-                    </li>
-                    <li>
-                        <a class="menu__Items" href="contacto.html">CONTACTO</a>
-                    </li>
+            <img class="navContainer__img navbar-brand navContainer sinpadding" src="../img/logo.png" alt="">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse nav" id="navbarNav">
+                <ul class="navbar-nav menu">
+                <li class="nav-item">
+                    <a class="nav-link active menu__Items" aria-current="page" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu__Items" href="productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu__Items" href="recetas.html">RECETAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu__Items" href="galeria.html">GALERÍA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu__Items" href="contacto.html">CONTACTO</a>
+                </li>
                 </ul>
-            </nav>
-            <div class="registration">
-                <a class="registration__Items" href="">Ingresá</a>
-                <a class="registration__Items" href="">Registrate</a>
             </div>
 
-        </div>
+            <div class="collapse navbar-collapse nav" id="navbarNav">
+                <ul class="navbar-nav menu">
+                <li class="nav-item">
+                    <a class="nav-link registration__Items" href="#">Ingresá</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link registration__Items" href="#">Registrate</a>
+                </li>
+                </ul>
+            </div>
 
+        </nav>
     </header>
+</div>
+</div>
 
     <!-- MAIN -->
 
-    <section>  
-        <h3>Tabla de precios</h3>
-        <table border="2px" cellpadding="10px">
-            <tr>
-                <th>Producto</th>
-                <th>Peso</th>
-                <th>Precio</th>
-            </tr>
-            <tr>
-                <td>Mermelada de frutillas</td>
-                <td>500cc</td>
-                <td>$389</td>
-            </tr>
-            <tr>
-                <td>Mermelada de naranja</td>
-                <td>500cc</td>
-                <td>$389</td>
-            </tr>
-            <tr>
-                <td>Mermelada de uva</td>
-                <td>500cc</td>
-                <td>$389</td>
-            </tr>
-
-        </table>
-    </section>
+<div class="container">
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Berenjenas al escabeche 560g</p><p>$390</p></div>
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Ajíes en vinagre 480g</p><p>$400</p></div>
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Corazones de alcauciles 560g</p><p>$480</p></div>
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Limoncello 500cc</p><p>$950</p></div>
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Mermelada de naranja 360g</p><p>$350</p></div>
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Mermelada de uva 360g</p><p>$350</p></div>
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Mermelada de frutilla 360g</p><p>$350</p></div>
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Mermelada de arándanos 360g</p><p>$350</p></div>
+    <div class="col-sm-12 col-md-6 col-lg-4 divProductos"><img class="imgproductos" src="../img/imgproductos1.jpg" alt=""><p>Mermelada de manzana con canela 360g</p><p>$350</p></div>
+</div>
+</div>
 
     <!--FOOTER-->
 
-    <footer>
+<div class="container-fluid">
+<div class="row">
+    <footer class="col-12">
         <img class="footerLogo" src="../img/logo.png" alt="" width="100px" height="100px">
         <div class="footerContacto">
             <p class="footerContacto__contenido">Dirección: Quisque blandit sed orci vel mollis.</p>
@@ -100,6 +104,11 @@
             <p>Copyright</p>
         </div>
     </footer>
-    
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    
+
 </body>
 </html>
