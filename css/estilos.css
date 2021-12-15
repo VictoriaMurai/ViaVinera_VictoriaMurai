@@ -10,7 +10,7 @@ body{
 
 /*MOBILE STYLES*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 575px) {
 
     .indexContainer{
         display: grid;
@@ -73,9 +73,6 @@ body{
     }
 
     .menu__Items:hover{
-        margin-left: 1.25rem;
-        margin-right: 1.25rem;
-        padding: 1rem;
         text-decoration: none;
         background-color: #7b2f3d9c;
         color: #FCFFF7;
@@ -208,6 +205,9 @@ body{
         grid-area: nombre-form;
     }
 
+    .nombre-form:hover{
+    }
+
     .apellido-form{
         grid-area: apellido-form;
     }
@@ -246,7 +246,7 @@ body{
 
 /*TABLET STYLES*/
 
-@media only screen and (min-width: 481px) and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 991px) {
 
     .indexContainer{
         display: grid;
@@ -305,9 +305,6 @@ body{
     }
 
     .menu__Items:hover{
-        margin-left: 1.25rem;
-        margin-right: 1.25rem;
-        padding: 1rem;
         text-decoration: none;
         background-color: #7b2f3d9c;
         color: #FCFFF7;
@@ -525,9 +522,6 @@ body{
         flex-wrap: wrap;
     }
     .menu__Items:hover{
-        margin-left: 1.25rem;
-        margin-right: 1.25rem;
-        padding: 1rem 23px;
         text-decoration: none;
         background-color: #7b2f3d9c;
         color: #FCFFF7;
@@ -963,7 +957,7 @@ h3{
 }
 
 .navbar-toggler{
-    background-color: black;
+background-color: grey;
 }
 
 .imgproductos{
@@ -980,4 +974,41 @@ h3{
 .g-custom{
     --bs-gutter-x: 2rem;
     --bs-gutter-y: 2rem;
+}
+
+
+
+
+.recetas{
+margin: 2rem 0;
+display: flex;
+flex-wrap: wrap;
+}
+
+.recetas-img{
+    height: auto;
+    background: linear-gradient(#7b2f3d, white);
+    padding: 1rem;
+}
+
+.recetas-img img{
+    width: 80%;
+    height: auto;
+    ;
+}
+
+.recetas-ingredientes{
+    height: auto;
+    background-color: #E5D7D9;
+    padding-left: 1.5rem;
+}
+
+.recetas-ingredientes p{
+    padding: 1rem;
+}
+
+.recetas-procedimiento{
+    height: auto;
+    background-color: #F5F0F1;
+    padding: 1.5rem;
 }
