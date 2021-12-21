@@ -205,9 +205,6 @@ body{
         grid-area: nombre-form;
     }
 
-    .nombre-form:hover{
-    }
-
     .apellido-form{
         grid-area: apellido-form;
     }
@@ -975,9 +972,6 @@ background-color: grey;
     --bs-gutter-x: 2rem;
     --bs-gutter-y: 2rem;
 }
-
-
-
 
 .recetas{
 margin: 2rem 0;

@@ -1,0 +1,168 @@
+/*MOBILE STYLES*/
+
+@media only screen and (max-width: 575px) {
+
+    header div div header{
+        padding: $sinpadding
+    }
+    .navContainer{
+        display: flex;
+        height: 4.6875rem;
+        justify-content: space-between;
+        background: linear-gradient(to left, white, #C0B3A0 90%);
+        align-items: center;
+
+        img{
+            align-self: stretch;
+        }
+
+        button{
+            background-color: grey;
+        }
+
+        div{
+            display: flex;
+            justify-content: right;
+
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                li a{
+                    margin-left: 1.25rem;
+                    margin-right: 1.25rem;
+                    padding: 0.625rem;
+                    text-decoration: none;
+                    background-color: #7B2F3D;
+                    color: #FCFFF7;
+
+                    &:hover{
+                        text-decoration: none;
+                        background-color: #7b2f3d9c;
+                        color: #FCFFF7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*TABLET STYLES*/
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+
+    header div div header{
+        padding: $sinpadding
+    }
+
+    .navContainer{
+        display: flex;
+        height: 4.6875rem;
+        justify-content: space-between;
+        background: linear-gradient(to left, white, #C0B3A0 90%);
+        align-items: center;
+
+        img{
+            align-self: stretch;
+        }
+
+        button{
+            background-color: grey;
+        }
+
+        div{
+            display: flex;
+            justify-content: right;
+
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                li a{
+                    margin-left: 1.25rem;
+                    margin-right: 1.25rem;
+                    padding: 0.625rem;
+                    text-decoration: none;
+                    background-color: #7B2F3D;
+                    color: #FCFFF7;
+                
+                    &:hover{
+                        text-decoration: none;
+                        background-color: #7b2f3d9c;
+                        color: #FCFFF7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*DESKTOP STYLES*/
+
+@media only screen and (min-width: 992px) {
+
+    header div div header{
+        padding: $sinpadding
+    }
+
+    .navContainer{
+        display: flex;
+        height: 4.6875rem;
+        justify-content: space-between;
+        background: linear-gradient(to left, white, #C0B3A0 90%);
+        align-items: center;
+
+        img{
+            align-self: stretch;
+        }
+
+        button{
+            background-color: grey;
+        }
+
+        div{
+            display: flex;
+            justify-content: right;
+
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                li a{
+                    margin-left: 1.25rem;
+                    margin-right: 1.25rem;
+                    padding: 0.625rem;
+                    text-decoration: none;
+                    background-color: #7B2F3D;
+                    color: #FCFFF7;
+                
+                    &:hover{
+                        text-decoration: none;
+                        background-color: #7b2f3d9c;
+                        color: #FCFFF7;
+                    }
+
+                    &.registration__Items{
+                        margin: 0.3125rem;
+                        margin-bottom: 1.875rem;
+                        padding-left: 0.625rem;
+                        padding-right: 0.625rem;
+                        padding-top: 0.625rem;
+                        padding-bottom: 0.625rem;
+                        text-decoration: none;
+                        background-color: #F8F6F4;
+                        color: #7b2f3d;
+                        border-left-style: solid;
+                        border-right-style: solid;
+                    }
+                }               
+            }
+        }
+    }
+}
