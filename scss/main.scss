@@ -13,16 +13,26 @@ body{
 }
 
 h3{
-    padding: $paddingtitulosh3;
     text-align: center
 }
 
+h3{
+    padding-top: map-get($map: $estilosTitulos, $key: marginh3);
+}
+
 h5{
-    padding: $paddingtitulosh5
+    text-decoration: map-get($map: $estilosTitulos, $key: sizeh5);
+    padding: map-get($map: $estilosTitulos, $key: paddingh5);
 }
 
 .sinpadding{
     padding: $sinpadding;
+}
+
+@mixin parrafos ($marginP, $paddingP, $lineHeight) {
+margin: $marginP;
+padding: $paddingP;
+line-height: $lineHeight;
 }
 
 .recetas{
@@ -48,13 +58,42 @@ h5{
         padding-left: 1.5rem;
 
         p{
-            padding: 1rem;
+            @include parrafos(0, 1rem, 1.5625rem)}
+    
+        ul{
+            list-style: disc;
         }
     }
 
     .recetas-procedimiento{
         height: auto;
         background-color: #F5F0F1;
-        padding: 1.5rem;
+        @include parrafos(0, 1.5rem, 1.5625rem)
     }
+}
+
+.precio{
+    width: fit-content;
+    padding: 5px 10px;
+    align-self: center;
+    border: solid 1.8px;
+    border-color: black;
+    border-radius: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.precio--sinstock{
+    @extend .precio;
+    background-color: rgb(207, 204, 204);
+    text-decoration: line-through;
+    &:hover{
+        cursor: default;
+    }
+}
+
+.recetas-procedimiento{
+    height: auto;
+    background-color: #F5F0F1;
 }

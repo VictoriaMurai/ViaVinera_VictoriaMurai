@@ -781,9 +781,6 @@ h4{
 
 }
 
-h5{
-    padding: 15px;
-}
 
 .barraLogo__login1{
     color: #7B2F3D;
@@ -961,11 +958,15 @@ background-color: grey;
     margin: 10%;
     padding: 2%;
     width: 9.375rem;
-    text-align: center;
+    align-self: center;
 }
 
 .divProductos{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-content: center;
+
 }
 
 .g-custom{
@@ -989,20 +990,4 @@ flex-wrap: wrap;
     width: 80%;
     height: auto;
     ;
-}
-
-.recetas-ingredientes{
-    height: auto;
-    background-color: #E5D7D9;
-    padding-left: 1.5rem;
-}
-
-.recetas-ingredientes p{
-    padding: 1rem;
-}
-
-.recetas-procedimiento{
-    height: auto;
-    background-color: #F5F0F1;
-    padding: 1.5rem;
 }

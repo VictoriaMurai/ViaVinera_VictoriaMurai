@@ -265,11 +265,15 @@ body {
 }
 
 h3 {
-  padding: 20px;
   text-align: center;
 }
 
+h3 {
+  padding-top: 40px;
+}
+
 h5 {
+  text-decoration: 1.25rem;
   padding: 15px;
 }
 
@@ -297,12 +301,44 @@ h5 {
   padding-left: 1.5rem;
 }
 .recetas .recetas-ingredientes p {
+  margin: 0;
   padding: 1rem;
+  line-height: 1.5625rem;
+}
+.recetas .recetas-ingredientes ul {
+  list-style: disc;
 }
 .recetas .recetas-procedimiento {
   height: auto;
   background-color: #F5F0F1;
+  margin: 0;
   padding: 1.5rem;
+  line-height: 1.5625rem;
+}
+
+.precio, .precio--sinstock {
+  width: fit-content;
+  padding: 5px 10px;
+  align-self: center;
+  border: solid 1.8px;
+  border-color: black;
+  border-radius: 10px;
+}
+.precio:hover, .precio--sinstock:hover {
+  cursor: pointer;
+}
+
+.precio--sinstock {
+  background-color: #cfcccc;
+  text-decoration: line-through;
+}
+.precio--sinstock:hover {
+  cursor: default;
+}
+
+.recetas-procedimiento {
+  height: auto;
+  background-color: #F5F0F1;
 }
 
 /*# sourceMappingURL=main.css.map */
