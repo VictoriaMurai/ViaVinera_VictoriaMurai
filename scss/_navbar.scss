@@ -17,7 +17,7 @@
         }
 
         button{
-            background-color: grey;
+            background-color: rgba(128, 128, 128, 0.404);
         }
 
         div{
@@ -35,13 +35,20 @@
                     margin-right: 1.25rem;
                     padding: 0.625rem;
                     text-decoration: none;
-                    background-color: #7B2F3D;
                     color: #FCFFF7;
+                    text-align: center;
 
                     &:hover{
                         text-decoration: none;
-                        background-color: #7b2f3d9c;
                         color: #FCFFF7;
+                    }
+
+                    &.registration__Items{
+                        padding-left: 0.625rem;
+                        padding-right: 0.625rem;
+                        padding-top: 0.625rem;
+                        text-decoration: none;
+                        background-color: #f8f6f400;
                     }
                 }
             }
@@ -69,7 +76,7 @@
         }
 
         button{
-            background-color: grey;
+            background-color: rgba(128, 128, 128, 0.404);
         }
 
         div{
@@ -87,13 +94,20 @@
                     margin-right: 1.25rem;
                     padding: 0.625rem;
                     text-decoration: none;
-                    background-color: #7B2F3D;
                     color: #FCFFF7;
+                    text-align: center;
                 
                     &:hover{
                         text-decoration: none;
-                        background-color: #7b2f3d9c;
                         color: #FCFFF7;
+                    }
+
+                    &.registration__Items{
+                        padding-left: 0.625rem;
+                        padding-right: 0.625rem;
+                        padding-top: 0.625rem;
+                        text-decoration: none;
+                        background-color: #f8f6f400;
                     }
                 }
             }
@@ -116,12 +130,8 @@
         background: linear-gradient(to left, white, #C0B3A0 90%);
         align-items: center;
 
-        img{
-            align-self: stretch;
-        }
-
         button{
-            background-color: grey;
+            background-color: rgb(128, 128, 128);
         }
 
         div{
@@ -156,7 +166,7 @@
                         padding-top: 0.625rem;
                         padding-bottom: 0.625rem;
                         text-decoration: none;
-                        background-color: #F8F6F4;
+                        background-color: #f8f6f400;
                         color: #7b2f3d;
                         border-left-style: solid;
                         border-right-style: solid;
