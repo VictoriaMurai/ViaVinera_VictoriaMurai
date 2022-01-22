@@ -67,21 +67,21 @@
     
     <section class="formContainer">
         <h3>Dejanos tus comentarios</h3>
-        <form class="formContainer__form" action="servidor.php" method="post">
+        <form class="formContainer__form" action="https://formspree.io/f/xgedopga" method="post">
     
-            <div class="nombre-form">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="" placeholder="Escriba su nombre">
+            <div class="nombre-form form-floating">
+                <input class="form-control" type="text" name="nombre" id="floatingInput" placeholder="Escriba su nombre">
+                <label for="floatingInput">Nombre</label>
             </div>
     
-            <div class="apellido-form">
+            <div class="apellido-form form-floating">
+                <input class="form-control" type="text" name="apellido" id="floatingInput" placeholder="Escriba su apellido">
                 <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="" placeholder="Escriba su apellido">
             </div>
     
-            <div class="email-form">
+            <div class="email-form form-floating">
+                <input class="form-control" type="mail" name="mail" required id="floatingInput" placeholder="Escriba su email">
                 <label for="mail">Email</label>
-                <input type="mail" name="mail" required id="" placeholder="Escriba su email">
             </div>
     
             <div class="tipodeconsulta-form">
@@ -98,13 +98,15 @@
             </div>
     
     
-            <input class= "enviar-form" type="button" value="Enviar formulario" name="" id="">
+            <input class= "enviar-form" type="submit" value="Enviar formulario" name="" id="">
         </form>
     </section>
     
     <section class="mapsContainer">
         <h3>Locales</h3>
         <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12044.975342962072!2d-58.45110929595553!3d-34.60961256408104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1189c237db%3A0x7d00b48da5073e21!2sCid%20Campeador!5e0!3m2!1ses-419!2sar!4v1636333565820!5m2!1ses-419!2sar" width="600" height="450" style="border:2;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Dirección: Av. Gaona 1163, Buenos Aires</p>
+        <p>Horario de atención: lunes a sábados de 9 a 19hs</p>
     </section>
     
     <!--FOOTER-->

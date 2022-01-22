@@ -43,11 +43,12 @@ line-height: $lineHeight;
     margin: 2rem 0;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.37);
 
     
     .recetas-img{
         height: auto;
-        background: linear-gradient(#7b2f3d, white);
+        background: linear-gradient(#7B2F3D, white);
         padding: 1rem;
 
         img{
@@ -58,8 +59,11 @@ line-height: $lineHeight;
 
     .recetas-ingredientes{
         height: auto;
-        background-color: #E5D7D9;
         padding-left: 1.5rem;
+        background-color: #EBDFE2;
+
+        @media only screen and (max-width: 575px) {
+            width: 100%;}
 
         p{
             @include parrafos(0, 1rem, 1.5625rem)}
@@ -71,7 +75,6 @@ line-height: $lineHeight;
 
     .recetas-procedimiento{
         height: auto;
-        background-color: #F5F0F1;
         @include parrafos(0, 1.5rem, 1.5625rem)
     }
 }
@@ -97,9 +100,19 @@ line-height: $lineHeight;
     }
 }
 
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-title{
+    align-self: center;
+    text-align: center;
+}
+
 .recetas-procedimiento{
     height: auto;
-    background-color: #F5F0F1;
 }
 
 *{
@@ -185,6 +198,16 @@ body{
         flex-wrap: wrap;
     }
 
+    .menu__Items{
+        &:visited{
+            color: #FCFFF7;
+        }
+
+        &:link{
+            color: #FCFFF7;
+        }
+    }
+
     .registration__Items{
         margin-left: 1.25rem;
         margin-right: 1.25rem;
@@ -222,8 +245,6 @@ body{
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-
-
     }
 
     .sectionRegala__contenido{
@@ -249,46 +270,6 @@ body{
     
         background-color: #7B2F3D;
     }
-
-    /*
-    
-    .footerLogo{
-        grid-area: footer-logo;
-        justify-self: center;
-    }
-    
-    .footerContacto{
-        grid-area: footer-contacto;
-        color: #ffffff;
-    }
-    
-    .footerContacto__contenido{
-        display: block;
-        padding-top: 20px;
-        padding-left: 5%;
-    }
-    
-    .footerSeguinos{
-        grid-area: footer-seguinos;
-        color: #ffffff;
-        padding-top: 20px;
-        padding-left: 5%;
-    }
-    
-    .footerRedes{
-        grid-area: footer-redes;
-        padding-top: 20px;
-        padding-left: 5%;
-    }
-    
-    .footerCopyright{
-        grid-area: footer-copyright;
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-    
-*/
 
     .formContainer__form{
         display: grid;
@@ -349,6 +330,20 @@ body{
         width: 100%;
     }
 
+    .carousel-div{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        height: 20rem;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .carousel{
+        width: auto;
+    }
 }
 
 /*TABLET STYLES*/
@@ -416,6 +411,16 @@ body{
         background-color: #7b2f3d9c;
         color: #FCFFF7;
         flex-wrap: wrap;
+    }
+
+    .menu__Items{
+        &:visited{
+            color: #FCFFF7;
+        }
+
+        &:link{
+            color: #FCFFF7;
+        }
     }
 
     .registration__Items{
@@ -566,7 +571,23 @@ body{
 
     .textarea{
         width: 100%;
-    }   
+    }
+    
+    .carousel-div{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        height: 20rem;
+        align-content: center;
+        justify-content: center;
+        background-color: #C0B3A0;
+    }
+    
+    .carousel{
+        width: 60%;
+    }
 }
 
 /*DESKTOP STYLES*/
@@ -626,12 +647,21 @@ body{
         background-color: #7B2F3D;
         color: #FCFFF7;
         flex-wrap: wrap;
-    }
-    .menu__Items:hover{
-        text-decoration: none;
-        background-color: #7b2f3d9c;
-        color: #FCFFF7;
-        flex-wrap: wrap;       
+
+        &:visited{
+            color: #FCFFF7;
+        }
+
+        &:link{
+            color: #FCFFF7;
+        }
+
+        &:hover{
+            text-decoration: none;
+            background-color: #7b2f3d9c;
+            color: #FCFFF7;
+            flex-wrap: wrap;  
+        }
     }
 
     .registration__Items{
@@ -786,6 +816,23 @@ body{
     .textarea{
         width: 100%;
     }
+
+    .carousel-div{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        height: 30rem;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.37);
+    }
+    
+    .carousel{
+        width: 50%;
+    }
 }
 
 header{
@@ -804,6 +851,10 @@ header{
     align-self: center;
     width: 80%;
     height: 100%;
+
+    p{
+        text-align: center;
+    }
 }
 
 .maps{
@@ -842,18 +893,54 @@ footer{
 
 .sectionNovedades__contenido--img{
     display: inline-block;
-    margin-top: 2%;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.568);
-    height: 20rem;
+    border-color: #7B2F3D;
+    height: 17rem;
 }
 
 .sectionNovedades__contenido--parrafo{
     display: inline-block;
     width: auto;
-    padding: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.1rem;
+    text-align: left;
+    
+    @media only screen and (max-width: 991px) {
+        text-align: justify;
+    }
+}
+
+.sectionNovedades__contenido--subtitulo{
+    display: inline-block;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 5%;
     font-size: 1.2rem;
-    text-align: center;    
+    text-align: left;
+    
+    @media only screen and (max-width: 991px) {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+.sectionRegala__contenido--subtitulo{
+    display: inline-block;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-size: 1.2rem;
+    text-align: right;
+    
+    @media only screen and (max-width: 991px) {
+        margin-top: 2rem;
+        text-align: center;
+    }
 }
 
 .sectionRegala{
@@ -863,6 +950,7 @@ footer{
 .sectionRegala__title{
     background-color: #FCFFF7;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     color: #7B2F3D;
 }
 
@@ -870,16 +958,21 @@ footer{
     display: inline-block;
     margin-top: 2%;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.568);
-    height: 20rem;
+    border-color: #7B2F3D;
+    height: 17rem;
 }
 
 .sectionRegala__contenido--parrafo{
     display: inline-block;
-    width: auto;
-    padding: 4%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 1.1rem;
-    text-align: center;    
+    text-align: right;
+    
+    @media only screen and (max-width: 991px) {
+        text-align: justify;
+    }
 }
 
 h3{
@@ -970,7 +1063,7 @@ h3{
 }
 
 .sectionImagenes__items--img{
-    width: 18.75rem; height: 12.5rem;
+    width: 17rem; height: 12.5rem;
 }
 
 .sectionImagenes__items--img:hover{
@@ -990,6 +1083,7 @@ h3{
 .sectionNovedades__title{
     background-color: #FCFFF7;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     color: #7B2F3D;
 }
 
@@ -1127,5 +1221,26 @@ flex-wrap: wrap;
     img{
         width: 80%;
         height: auto;
+    }
+}
+
+.link{
+    color: black;
+}
+
+.cardsProductos{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 18.75rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.37);
+
+    &:hover{
+        cursor: pointer;
+        background-color: #DDD6CB;
     }
 }
