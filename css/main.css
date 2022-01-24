@@ -11,6 +11,7 @@
     justify-content: space-between;
     background: linear-gradient(to left, white, #C0B3A0 90%);
     align-items: center;
+    z-index: 100;
   }
   .navContainer img {
     align-self: stretch;
@@ -60,6 +61,7 @@
     justify-content: space-between;
     background: linear-gradient(to left, white, #C0B3A0 90%);
     align-items: center;
+    z-index: 100;
   }
   .navContainer img {
     align-self: stretch;
